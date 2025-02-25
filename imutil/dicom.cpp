@@ -44,8 +44,8 @@ int write_dcm_dir(const char *path, const Image *const im,
 /*----------------Include the very picky DCMTK----------------*/
 #include "dcmtk/config/osconfig.h"    /* make sure OS specific configuration is included first */
 
-#define INCLUDE_CSTDIO
-#define INCLUDE_CSTRING
+#include <cstdio>
+#include <cstring>
 #include "dcmtk/ofstd/ofstdinc.h"
 
 #ifdef HAVE_GUSI_H

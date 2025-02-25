@@ -14,7 +14,10 @@ target_link_libraries(kpSift3D PUBLIC sift3D imutil)
 add_executable(regSift3D regSift3D.c)
 target_link_libraries(regSift3D PUBLIC reg sift3D imutil)
 
-install (TARGETS denseSift3D kpSift3D regSift3D
+add_executable(featSift3D featSift3D.c)
+target_link_libraries(featSift3D PUBLIC sift3D imutil)
+
+install (TARGETS denseSift3D kpSift3D regSift3D featSift3D
 	 RUNTIME DESTINATION ${INSTALL_BIN_DIR} 
 	 LIBRARY DESTINATION ${INSTALL_LIB_DIR} 
 	 ARCHIVE DESTINATION ${INSTALL_LIB_DIR})
