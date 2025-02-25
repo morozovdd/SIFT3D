@@ -31,13 +31,7 @@ sudo apt-get install zlib1g-dev liblapack-dev libdcmtk-dev libnifti-dev
 git clone https://github.com/bbrister/SIFT3D.git
 ```
 
-2. If you encounter C++ standard compatibility issues with DCMTK, add these lines to the top of CMakeLists.txt:
-```cmake
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-```
-
-3. Build the project:
+2. Build the project:
 ```bash
 mkdir build
 cd build
