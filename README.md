@@ -28,7 +28,7 @@ sudo apt-get install zlib1g-dev liblapack-dev libdcmtk-dev libnifti-dev
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/bbrister/SIFT3D.git
+git clone https://github.com/morozovdd/SIFT3D.git
 ```
 
 2. Build the project:
